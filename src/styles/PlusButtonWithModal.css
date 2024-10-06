@@ -1,0 +1,87 @@
+/* src/styles/PlusButtonWithModal.css */
+
+/* General styling for the wrapper */
+.plus-button-with-modal {
+    position: fixed; /* Keeps the button in a fixed spot */
+    bottom: 20px; /* Positioned at the bottom right */
+    right: 20px;
+    z-index: 2000; /* High z-index to ensure visibility over other content */
+}
+
+/* Styling for the plus button */
+.plus-button {
+    font-size: 4rem; /* Larger font size for the plus sign */
+    width: 100px; /* Increased width */
+    height: 100px; /* Increased height */
+    background-color: #000; /* Black background color */
+    color: #fff; /* White color for the plus sign */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+
+    /* Flex properties to center the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Transition for hover effect */
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.plus-button:hover {
+    background-color: #444; /* Slightly lighter black on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3000; /* High z-index to make sure it appears over everything */
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+/* Make the modal heading text larger */
+.modal-content h2 {
+    font-size: 2.5rem; /* Much larger font size for the heading */
+    margin-bottom: 20px;
+}
+
+/* Make the modal paragraph text larger */
+.modal-content p {
+    font-size: 1.5rem; /* Much larger font size for the paragraph */
+}
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 3rem; /* Increased font size for better visibility */
+    color: #fff;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #f00;
+}
