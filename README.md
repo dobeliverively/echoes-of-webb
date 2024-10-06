@@ -1,9 +1,13 @@
-# Getting Started with Create React App
+# B Diezai Nasa Space Apps website submission
+It include the website we created for our challenge of harmonising music
+along with more than three Webb-made images to tell a story about JWST
+mission.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
+You need react-scripts to run website
 In the project directory, you can run:
 
 ### `npm start`
